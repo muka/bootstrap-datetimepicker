@@ -2620,4 +2620,7 @@
     if (typeof module !== 'undefined') {
         module.exports = $.fn.datetimepicker;
     }
+    if(window) {
+     window.$.fn.datetimepicker = $.fn.datetimepicker;
+    }
 }));
